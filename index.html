@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youngser Park</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #333;
+      background-color: #fff;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 22px;
+      color: #002D62;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-size: 16px;
+      color: #002D62;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      margin-top: 24px;
+    }
+    h3 {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+    a {
+      color: #1a0dab;
+    }
+    a:visited {
+      color: #609;
+    }
+    .header {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .header img {
+      width: 160px;
+      border: 1px solid #ddd;
+    }
+    .header-info {
+      flex: 1;
+    }
+    .header-info p {
+      margin: 4px 0;
+    }
+    ul {
+      margin: 6px 0;
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .pub-entry {
+      margin-bottom: 10px;
+    }
+    .pub-entry .authors {
+      color: #555;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="parky.jpg" alt="Youngser Park">
+    <div class="header-info">
+      <h1>Youngser Park</h1>
+      <p>Senior Research Scientist</p>
+      <p>
+        <a href="http://engineering.jhu.edu/ams/">Department of Applied Mathematics and Statistics</a><br>
+        <a href="http://www.cis.jhu.edu/">Center for Imaging Science</a><br>
+        <a href="http://www.jhu.edu/">Johns Hopkins University</a>
+      </p>
+      <p>
+        Clark Hall 319<br>
+        3400 N. Charles Street<br>
+        Baltimore, MD 21218
+      </p>
+      <p>
+        Email: <a href="mailto:youngser@jhu.edu">youngser@jhu.edu</a>
+      </p>
+      <p>
+        [<a href="https://github.com/youngser">GitHub</a>]
+      </p>
+    </div>
+  </div>
+
+  <h2>Research Interests</h2>
+  <p>
+    My research focuses on statistical machine learning and inference for graphs and networks,
+    with applications in neuroscience (connectomics), language processing, and other domains.
+    Topics include:
+  </p>
+  <ul>
+    <li>Spectral methods for graph inference and clustering</li>
+    <li>Nonparametric and semiparametric statistical models for networks</li>
+    <li>Random dot product graphs (RDPG) and stochastic block models (SBM)</li>
+    <li>Vertex nomination and graph matching</li>
+    <li>Dimensionality estimation and model selection for graph data</li>
+  </ul>
+
+  <h2>Selected Publications</h2>
+
+  <div class="pub-entry">
+    <h3>
+      <a href="https://arxiv.org/abs/1705.03297">
+        Semiparametric spectral modeling of the Drosophila connectome
+      </a>
+    </h3>
+    <span class="authors">
+      C.E. Priebe, Y. Park, M. Tang, A. Athreya, V. Lyzinski, J. Vogelstein,
+      Y. Qin, B. Cocanougher, K. Eichler, M. Zlatic, A. Cardona.
+    </span>
+    <em>arXiv:1705.03297</em>, 2017.
+  </div>
+
+  <div class="pub-entry">
+    <h3>
+      <a href="https://www.tandfonline.com/doi/full/10.1080/10618600.2019.1671464">
+        Simultaneous dimensionality and complexity model selection for spectral graph clustering
+      </a>
+    </h3>
+    <span class="authors">
+      Y. Park, C.E. Priebe, A. Youssef.
+    </span>
+    <em>Journal of Computational and Graphical Statistics</em>, 2019.
+  </div>
+
+  <div class="pub-entry">
+    <h3>
+      <a href="https://arxiv.org/abs/1709.05454">
+        Vertex nomination via seeded graph matching
+      </a>
+    </h3>
+    <span class="authors">
+      V. Lyzinski, Y. Park, C.E. Priebe, M. Maggioni.
+    </span>
+    <em>Statistical Analysis and Data Mining</em>, 2019.
+  </div>
+
+  <div class="pub-entry">
+    <h3>
+      <a href="https://arxiv.org/abs/1207.6745">
+        Perfect clustering for stochastic blockmodel graphs via adjacency spectral embedding
+      </a>
+    </h3>
+    <span class="authors">
+      D.L. Sussman, M. Tang, D.E. Fishkind, K. Levin, Y. Park, C.E. Priebe.
+    </span>
+    <em>Electronic Journal of Statistics</em>, 2014.
+  </div>
+
+  <div class="pub-entry">
+    <h3>
+      <a href="https://arxiv.org/abs/1310.0532">
+        Locality statistics for anomaly detection in time series of graphs
+      </a>
+    </h3>
+    <span class="authors">
+      Y. Park, C.E. Priebe, A. Youssef.
+    </span>
+    <em>IEEE Transactions on Signal Processing</em>, 2013.
+  </div>
+
+  <h2>Software</h2>
+  <ul>
+    <li>
+      <a href="https://github.com/youngser/mbstructure">mbstructure</a> &mdash;
+      R package for semiparametric spectral modeling of the Drosophila connectome
+    </li>
+    <li>
+      <a href="https://github.com/youngser/gmmase">gmmase</a> &mdash;
+      R package for graph spectral clustering (simultaneous d̂, K̂ selection)
+    </li>
+    <li>
+      <a href="https://github.com/youngser/VN">VN</a> &mdash;
+      R code for vertex nomination via seeded graph matching
+    </li>
+    <li>
+      <a href="https://github.com/youngser/dhatkhat">dhatkhat</a> &mdash;
+      R code for simultaneous (d̂, K̂) JCGS paper
+    </li>
+  </ul>
+
+  <h2>Teaching</h2>
+  <ul>
+    <li>AMS 166: Introduction to Statistical Learning, Johns Hopkins University</li>
+  </ul>
+
+  <h2>Affiliations</h2>
+  <ul>
+    <li>
+      <a href="http://engineering.jhu.edu/ams/">Department of Applied Mathematics and Statistics</a>,
+      Johns Hopkins University
+    </li>
+    <li>
+      <a href="http://www.cis.jhu.edu/">Center for Imaging Science</a>,
+      Johns Hopkins University
+    </li>
+    <li>
+      <a href="http://hltcoe.jhu.edu/">Human Language Technology Center of Excellence</a>,
+      Johns Hopkins University
+    </li>
+  </ul>
+
+  <footer>
+    Last updated: March 2026 &mdash;
+    <a href="mailto:youngser@jhu.edu">youngser@jhu.edu</a>
+  </footer>
+
+</body>
+</html>
